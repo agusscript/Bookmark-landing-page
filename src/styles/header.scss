@@ -1,0 +1,58 @@
+@import "variables.scss";
+
+header {
+  margin: 0 auto;
+  width: 80%;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .bookmark-logo {
+    width: 160px;
+  }
+
+  nav {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      list-style: none;
+
+      li {
+        a {
+          color: $Very-Dark-Blue;
+          text-decoration: none;
+        }
+
+        a:hover {
+          color: $Soft-Red;
+        }
+
+        .login-btn {
+          border: none;
+          padding: 0.72rem 2rem;
+          font-size: inherit;
+          font-weight: bold;
+          text-transform: uppercase;
+          letter-spacing: inherit;
+          color: white;
+          background-color: $Soft-Red;
+          border-radius: 0.3rem;
+          border: 2px solid $Soft-Red;
+          box-shadow: 0px 4px 8px -2px rgba(45, 87, 116, 0.5);
+        }
+
+        .login-btn:hover {
+          background-color: transparent;
+          color: $Soft-Red;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

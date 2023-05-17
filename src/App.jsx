@@ -1,11 +1,11 @@
-/* eslint-disable react/react-in-jsx-scope */
+import React from "react";
+import "./styles/main.scss";
+import Header from "./components/header";
 
 function App() {
   return (
     <>
-      <h1>
-        bookmark react landing page
-      </h1>
+      <Header />
     </>
   );
 }
