@@ -12,47 +12,44 @@ header {
     width: 160px;
   }
 
-  nav {
-    text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    font-size: 0.9rem;
+  .nav-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
 
-    ul {
-      display: flex;
-      align-items: center;
-      gap: 3rem;
-      list-style: none;
+    nav {
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+      font-size: 0.9rem;
 
-      li {
-        a {
-          color: $Very-Dark-Blue;
-          text-decoration: none;
-        }
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        list-style: none;
 
-        a:hover {
-          color: $Soft-Red;
-        }
+        li {
+          a {
+            color: $Very-Dark-Blue;
+            text-decoration: none;
+          }
 
-        .login-btn {
-          border: none;
-          padding: 0.72rem 2rem;
-          font-size: inherit;
-          font-weight: bold;
-          text-transform: uppercase;
-          letter-spacing: inherit;
-          color: white;
-          background-color: $Soft-Red;
-          border-radius: 0.3rem;
-          border: 2px solid $Soft-Red;
-          box-shadow: 0px 4px 8px -2px rgba(45, 87, 116, 0.5);
-        }
-
-        .login-btn:hover {
-          background-color: transparent;
-          color: $Soft-Red;
-          cursor: pointer;
+          a:hover {
+            color: $Soft-Red;
+          }
         }
       }
+    }
+
+    .login-btn {
+      @include btn-default($Soft-Red);
+      padding: 0.72rem 2rem;
+      text-transform: uppercase;
+    }
+
+    .login-btn:hover {
+      background-color: transparent;
+      color: $Soft-Red;
     }
   }
 }
