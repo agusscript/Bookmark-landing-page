@@ -74,13 +74,117 @@ main {
 
     .bg-img {
       position: absolute;
-      width: 100%;
+      width: 1000px;
       height: 370px;
       background-color: $Soft-Blue;
       border-bottom-left-radius: 12rem;
       z-index: -1;
       top: 30%;
       left: 34%;
+    }
+  }
+}
+
+.features-section {
+  margin: 8rem auto;
+  width: 80%;
+
+  .feature-header {
+    text-align: center;
+
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 500;
+      color: $Very-Dark-Blue;
+    }
+
+    p {
+      font-size: 1.15rem;
+      line-height: 1.8rem;
+      color: $Grayish-Blue;
+      max-width: 52%;
+      margin: 0 auto;
+    }
+
+    nav {
+      margin: 5rem auto;
+      max-width: 62%;
+      padding-bottom: 1rem;
+      padding-right: 3.2rem;
+      border-bottom: 1px solid $Grayish-Blue;
+
+      ul {
+        padding-right: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 2rem;
+        list-style: none;
+
+        li {
+          a {
+            font-size: 1.1rem;
+            letter-spacing: 0.02rem;
+            color: $Grayish-Blue;
+            text-decoration: none;
+          }
+
+          a:hover {
+            color: $Soft-Red;
+          }
+        }
+      }
+    }
+  }
+
+  .feature-main {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+
+    .img-container {
+      position: relative;
+
+      .hero-img {
+        width: 700px;
+        margin-right: -100px;
+      }
+
+      .bg-img {
+        position: absolute;
+        width: 1000px;
+        height: 340px;
+        background-color: $Soft-Blue;
+        border-bottom-right-radius: 12rem;
+        z-index: -1;
+        top: 26%;
+        right: 12%;
+      }
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 500;
+      color: $Very-Dark-Blue;
+    }
+
+    p {
+      font-size: 1.15rem;
+      line-height: 1.8rem;
+      color: $Grayish-Blue;
+      max-width: 95%;
+    }
+
+    .info-btn {
+      @include btn-default($Soft-Blue);
+      margin-top: 1rem;
+      padding: 0.8rem 1.4rem;
+      letter-spacing: 0.02rem;
+    }
+
+    .info-btn:hover {
+      background-color: transparent;
+      color: $Soft-Blue;
     }
   }
 }

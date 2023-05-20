@@ -3,13 +3,13 @@ import "./styles/main.scss";
 import "./styles/header.scss";
 import bookmarkLogo from "./assets/images/logo-bookmark.svg";
 import heroImage from "./assets/images/illustration-hero.svg";
-import NavBar from "./components/navBar";
-import Button from "./components/button";
+import imgTab1 from "./assets/images/illustration-features-tab-1.svg";
+import NavBar from "./components/NavBar";
+import Button from "./components/Button";
 
 function App() {
   return (
     <>
-
       <header>
         <img src={bookmarkLogo} alt="bookmark logo" className="bookmark-logo" />
         <div className="nav-container">
@@ -35,8 +35,34 @@ function App() {
             <div className="bg-img"></div>
           </div>
         </section>
-      </main>
 
+        <section className="features-section">
+          <div className="feature-header">
+            <h2>Features</h2>
+            <p>
+              Our aim is to make quick and easy for you to access your favourites websites. Your bookmarks sync between your devices so you can access them on the go.
+            </p>
+            <NavBar linkText1="Simple Bookmarking" linkText2="Speedy Searching" linkText3="Easy Sharing" />
+          </div>
+
+          <div className="feature-main">
+            <div className="img-container">
+              <img src={imgTab1} alt="tab illustration" className="tab1-img" />
+              <div className="bg-img"></div>
+            </div>
+
+            <div>
+              <h2>Bookmark in one click</h2>
+              <p>
+                Organize your bookmarks however you like. Our simple drag-and-drop interface
+                gives you complete control over how you manage your favourite sites.
+              </p>
+              <Button className="info-btn" btnText="More Info" />
+            </div>
+          </div>
+
+        </section>
+      </main>
     </>
   );
 }
