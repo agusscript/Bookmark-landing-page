@@ -4,8 +4,12 @@ import "./styles/header.scss";
 import bookmarkLogo from "./assets/images/logo-bookmark.svg";
 import heroImage from "./assets/images/illustration-hero.svg";
 import imgTab1 from "./assets/images/illustration-features-tab-1.svg";
+import ChromeImg from "./assets/images/logo-chrome.svg";
+import FirefoxImg from "./assets/images/logo-firefox.svg";
+import OperaImg from "./assets/images/logo-opera.svg";
 import NavBar from "./components/NavBar";
 import Button from "./components/Button";
+import Card from "./components/Card";
 
 function App() {
   return (
@@ -44,13 +48,11 @@ function App() {
             </p>
             <NavBar linkText1="Simple Bookmarking" linkText2="Speedy Searching" linkText3="Easy Sharing" />
           </div>
-
           <div className="feature-main">
             <div className="img-container">
               <img src={imgTab1} alt="tab illustration" className="tab1-img" />
               <div className="bg-img"></div>
             </div>
-
             <div>
               <h2>Bookmark in one click</h2>
               <p>
@@ -60,7 +62,19 @@ function App() {
               <Button className="info-btn" btnText="More Info" />
             </div>
           </div>
+        </section>
 
+        <section className="download-section">
+          <h2>Download the extension</h2>
+          <p>
+            We’ve got more browsers in the pipeline. Please do let us know if you’ve
+            got a favourite you’d like us to prioritize.
+          </p>
+          <div className="card-container">
+            <Card image={ChromeImg} browser="Chrome" version="62" />
+            <Card image={FirefoxImg} browser="Firefox" version="55" />
+            <Card image={OperaImg} browser="Opera" version="46" />
+          </div>
         </section>
       </main>
     </>

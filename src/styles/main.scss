@@ -86,7 +86,7 @@ main {
 }
 
 .features-section {
-  margin: 8rem auto;
+  margin: 10rem auto;
   width: 80%;
 
   .feature-header {
@@ -108,17 +108,17 @@ main {
 
     nav {
       margin: 5rem auto;
-      max-width: 62%;
+      max-width: 64%;
       padding-bottom: 1rem;
       padding-right: 3.2rem;
       border-bottom: 1px solid $Grayish-Blue;
 
       ul {
-        padding-right: 6rem;
+        padding-right: 3rem;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
-        gap: 2rem;
+        gap: 4.5rem;
         list-style: none;
 
         li {
@@ -185,6 +185,102 @@ main {
     .info-btn:hover {
       background-color: transparent;
       color: $Soft-Blue;
+    }
+  }
+}
+
+.download-section {
+  margin: 10rem auto;
+  width: 80%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h2 {
+    margin-top: 4rem;
+    color: $Very-Dark-Blue;
+    font-size: 2.2rem;
+    font-weight: 500;
+  }
+
+  p {
+    font-size: 1.15rem;
+    line-height: 1.8rem;
+    color: $Grayish-Blue;
+    max-width: 52%;
+    margin: 0 auto;
+  }
+
+  .card-container {
+    width: 88%;
+    margin: 2.4rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+
+    .card-extension {
+      width: 280px;
+      height: 360px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: end;
+      box-shadow: 0px 6px 8px 0px rgba(169, 196, 218, 0.363);
+      border-radius: 1rem;
+
+      img {
+        margin-bottom: 2rem;
+      }
+
+      h3 {
+        margin: 0.4rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: $Very-Dark-Blue;
+      }
+
+      p {
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+      }
+
+      hr {
+        margin: 0;
+        width: 100%;
+        height: 24px;
+        font-weight: bolder;
+        color: rgba(189, 189, 189, 0.658);
+        border: none;
+        overflow: hidden;
+      }
+
+      hr:after {
+        content: "...............";
+        letter-spacing: 16px; /* Use letter-spacing to increase space between dots*/
+      }
+
+      .extension-btn {
+        margin: 1rem 0 1.8rem 0;
+        @include btn-default($Soft-Blue);
+        padding: 0.8rem 1.6rem;
+        letter-spacing: 0.04rem;
+      }
+
+      .extension-btn:hover {
+        background-color: transparent;
+        color: $Soft-Blue;
+      }
+    }
+
+    .card-extension:nth-child(2) {
+      margin-top: 2.4rem;
+    }
+
+    .card-extension:nth-child(3) {
+      margin-top: 4.4rem;
     }
   }
 }
