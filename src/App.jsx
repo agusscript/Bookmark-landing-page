@@ -88,6 +88,16 @@ function App() {
           <Faqs />
           <Button className="faq-btn" btnText="More Info" />
         </section>
+
+        <section className="contact-section">
+          <p>35,000+ ALREADY JOINED</p>
+          <h2>Stay up-to-date with what we’re doing</h2>
+          <form className="contact-form">
+            <input id="contact-input" type="text" placeholder="Enter your email address" />
+            <Button className="contact-btn" btnText="Contact Us" />
+          </form>
+        </section>
+
       </main>
     </>
   );
