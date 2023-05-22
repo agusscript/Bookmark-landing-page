@@ -10,6 +10,7 @@ import OperaImg from "./assets/images/logo-opera.svg";
 import NavBar from "./components/NavBar";
 import Button from "./components/Button";
 import Card from "./components/Card";
+import Faqs from "./components/Faqs";
 
 function App() {
   return (
@@ -75,6 +76,17 @@ function App() {
             <Card image={FirefoxImg} browser="Firefox" version="55" />
             <Card image={OperaImg} browser="Opera" version="46" />
           </div>
+        </section>
+
+        <section className="faq-section">
+          <h2>Frequently Asked Questions</h2>
+          <p>
+            Here are some of our FAQs. If you have any other questions you’d like
+            answered please feel free to email us.
+          </p>
+
+          <Faqs />
+          <Button className="faq-btn" btnText="More Info" />
         </section>
       </main>
     </>
