@@ -1,0 +1,53 @@
+@import "variables.scss";
+
+footer {
+  background-color: $Very-Dark-Blue;
+  padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  .nav-container {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+
+    img {
+      width: 170px;
+    }
+
+    nav {
+      ul {
+        margin: 0;
+        display: flex;
+        letter-spacing: 0.1rem;
+        font-size: 0.87rem;
+        gap: 3rem;
+        text-transform: uppercase;
+        list-style: none;
+
+        a {
+          text-decoration: none;
+          color: white;
+        }
+
+        a:hover {
+          color: $Soft-Red;
+        }
+      }
+    }
+  }
+
+  .icon-container {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    svg:hover {
+      cursor: pointer;
+      path {
+        fill: $Soft-Red;
+      }
+    }
+  }
+}

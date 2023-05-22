@@ -7,13 +7,13 @@ function NavBar({ linkText1, linkText2, linkText3 }) {
     <nav>
       <ul>
         <li>
-          <a href="#">{linkText1}</a>
+          <a href="#features">{linkText1}</a>
         </li>
         <li>
-          <a href="#">{linkText2}</a>
+          <a href="#download">{linkText2}</a>
         </li>
         <li>
-          <a href="#">{linkText3}</a>
+          <a href="#contact">{linkText3}</a>
         </li>
       </ul>
     </nav>
