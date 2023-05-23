@@ -387,14 +387,14 @@ main {
   background-color: $Soft-Blue;
   color: white;
 
-  h2 {
+  .contact-title {
     text-align: center;
     font-size: 2.2rem;
     font-weight: 500;
     max-width: 40%;
   }
 
-  p {
+  .contact-subtitle {
     font-size: 0.9rem;
     margin: 0 auto;
     letter-spacing: 0.4rem;
@@ -426,6 +426,10 @@ main {
       .error {
         height: 44px;
         border: 3px solid $Soft-Red;
+        background-image: url("https://raw.githubusercontent.com/agusscript/bookmark-landing-page-react/94e3c897806c16012cf307075055aaf7b9fe48d9/src/assets/images/icon-error.svg");
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+        background-position: 280px 0.7rem;
       }
 
       .error-text {
@@ -457,5 +461,70 @@ main {
       background-color: white;
       color: $Soft-Red;
     }
+
+    .contact-btn:active {
+      background-color: $Soft-Blue;
+    }
+  }
+
+  .contact-modal {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    max-width: 520px;
+    min-height: 300px;
+    padding: 0 4rem;
+    line-height: 1.7rem;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    animation: smoth 0.4s;
+    background-color: $Very-Dark-Blue;
+    border-radius: 0.4rem;
+
+    h2 {
+      margin: 0.5rem;
+      font-size: 2.2rem;
+      font-weight: 500;
+    }
+
+    p {
+      font-size: 1.1rem;
+      letter-spacing: 0.2rem;
+    }
+
+    button {
+      @include btn-default($Soft-Blue);
+      margin-top: 1rem;
+      width: 140px;
+      height: 46px;
+      letter-spacing: 0.02rem;
+    }
+
+    button:hover {
+      background-color: transparent;
+    }
+
+    button:active {
+      background-color: $Soft-Blue;
+    }
+
+    @keyframes smoth {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+
+  .hidden {
+    display: none;
   }
 }

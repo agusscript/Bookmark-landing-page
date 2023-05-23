@@ -9,7 +9,7 @@ import FirefoxImg from "./assets/images/logo-firefox.svg";
 import OperaImg from "./assets/images/logo-opera.svg";
 import NavBar from "./components/NavBar";
 import BookmarkLogo from "./components/BookmarkLogo";
-import Button, { validateEmail } from "./components/Button";
+import Button, { reloadPage, validateEmail } from "./components/Button";
 import Card from "./components/Card";
 import Faqs from "./components/Faqs";
 
@@ -91,16 +91,20 @@ function App() {
         </section>
 
         <section id="contact" className="contact-section">
-          <p>35,000+ ALREADY JOINED</p>
-          <h2>Stay up-to-date with what we’re doing</h2>
+          <p className="contact-subtitle">35,000+ ALREADY JOINED</p>
+          <h2 className="contact-title">Stay up-to-date with what we’re doing</h2>
           <form className="contact-form">
             <div className="input-wrapper">
               <input className="contact-input" type="text" placeholder="Enter your email address" />
               <span className="error-text hidden">Whoops, make sure it’s an email</span>
-              {/* Whoops, make sure it’s an email */}
             </div>
             <Button className="contact-btn" btnText="Contact Us" handle={validateEmail} />
           </form>
+          <div className="contact-modal hidden">
+            <h2>Thanks for your support!</h2>
+            <p>We will send you by e-mail all the information about our latest news.</p>
+            <button onClick={reloadPage}>Got it!</button>
+          </div>
         </section>
 
         <footer>
