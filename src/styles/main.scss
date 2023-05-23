@@ -404,12 +404,42 @@ main {
     display: flex;
     gap: 1rem;
 
-    #contact-input {
-      width: 280px;
-      padding: 0.9rem 1.1rem;
-      font-size: 1rem;
-      border: none;
+    .input-wrapper {
+      display: flex;
+      flex-direction: column;
+      background-color: $Soft-Red;
       border-radius: 0.3rem;
+
+      .contact-input {
+        width: 280px;
+        padding: 0 1.1rem;
+        font-size: 1rem;
+        height: 50px;
+        border: none;
+        border-radius: 0.3rem;
+      }
+
+      .contact-input:focus {
+        outline: none;
+      }
+
+      .error {
+        height: 44px;
+        border: 3px solid $Soft-Red;
+      }
+
+      .error-text {
+        padding: 0.15rem 0 0.4rem 0;
+        margin-left: 1rem;
+        font-size: 0.86rem;
+        background-color: $Soft-Red;
+        border-bottom-left-radius: 0.3rem;
+        border-bottom-right-radius: 0.3rem;
+      }
+
+      .hidden {
+        display: none;
+      }
     }
 
     ::placeholder {
@@ -418,7 +448,8 @@ main {
 
     .contact-btn {
       @include btn-default($Soft-Red);
-      padding: 0.9rem 1.1rem;
+      width: 130px;
+      height: 50px;
       letter-spacing: 0.02rem;
     }
 

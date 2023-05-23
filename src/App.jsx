@@ -9,7 +9,7 @@ import FirefoxImg from "./assets/images/logo-firefox.svg";
 import OperaImg from "./assets/images/logo-opera.svg";
 import NavBar from "./components/NavBar";
 import BookmarkLogo from "./components/BookmarkLogo";
-import Button from "./components/Button";
+import Button, { validateEmail } from "./components/Button";
 import Card from "./components/Card";
 import Faqs from "./components/Faqs";
 
@@ -94,8 +94,12 @@ function App() {
           <p>35,000+ ALREADY JOINED</p>
           <h2>Stay up-to-date with what we’re doing</h2>
           <form className="contact-form">
-            <input id="contact-input" type="text" placeholder="Enter your email address" />
-            <Button className="contact-btn" btnText="Contact Us" />
+            <div className="input-wrapper">
+              <input className="contact-input" type="text" placeholder="Enter your email address" />
+              <span className="error-text hidden">Whoops, make sure it’s an email</span>
+              {/* Whoops, make sure it’s an email */}
+            </div>
+            <Button className="contact-btn" btnText="Contact Us" handle={validateEmail} />
           </form>
         </section>
 
