@@ -120,6 +120,7 @@ main {
         border-bottom: 1px solid rgb(221, 221, 221);
         display: flex;
         justify-content: start;
+        transition: all 1s;
 
         .inner-border {
           width: 33%;
@@ -193,6 +194,17 @@ main {
       }
     }
 
+    @keyframes fade {
+      0% {
+        opacity: 0;
+        transform: scale(1.1);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
     .text-container {
       h2 {
         font-size: 2rem;
@@ -219,6 +231,10 @@ main {
         color: $Soft-Blue;
       }
     }
+  }
+
+  .animation-fade {
+    animation: fade 1s;
   }
 }
 

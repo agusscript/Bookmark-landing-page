@@ -41,6 +41,7 @@ function handleFeature(e) {
   const featureOption = e.target;
   const $bottomLine = document.querySelector(".feature-bottom-line");
   const $innerLine = document.querySelector(".inner-border");
+  const $featureMain = document.querySelector(".feature-main");
 
   if (featureOption.className === "feature-1") {
     changeFeatureElement(0);
@@ -48,17 +49,29 @@ function handleFeature(e) {
     $bottomLine.classList.remove("center");
     $innerLine.classList.remove("move-to-right");
     $bottomLine.classList.add("start");
+    $featureMain.classList.remove("animation-fade");
+    setTimeout(() => {
+      $featureMain.classList.add("animation-fade");
+    }, 0.5);
   } else if (featureOption.className === "feature-2") {
     changeFeatureElement(1);
     $bottomLine.classList.remove("start");
     $bottomLine.classList.remove("end");
     $bottomLine.classList.add("center");
     $innerLine.classList.add("move-to-right");
+    $featureMain.classList.remove("animation-fade");
+    setTimeout(() => {
+      $featureMain.classList.add("animation-fade");
+    }, 0.5);
   } else if (featureOption.className === "feature-3") {
     changeFeatureElement(2);
     $bottomLine.classList.remove("start");
     $bottomLine.classList.remove("center");
     $bottomLine.classList.add("end");
+    $featureMain.classList.remove("animation-fade");
+    setTimeout(() => {
+      $featureMain.classList.add("animation-fade");
+    }, 0.5);
   }
 }
 
