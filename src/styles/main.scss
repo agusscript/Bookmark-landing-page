@@ -112,10 +112,36 @@ main {
 
     nav {
       margin: 5rem auto;
-      max-width: 64%;
+      max-width: 68%;
       padding-bottom: 1rem;
-      padding-right: 3.2rem;
-      border-bottom: 1px solid $Grayish-Blue;
+
+      .feature-bottom-line {
+        margin-top: 2rem;
+        border-bottom: 1px solid rgb(221, 221, 221);
+        display: flex;
+        justify-content: start;
+
+        .inner-border {
+          width: 33%;
+          border-top: 4px solid $Soft-Red;
+        }
+
+        .move-to-right {
+          margin-left: 3.5rem;
+        }
+      }
+
+      .start {
+        justify-content: start;
+      }
+
+      .center {
+        justify-content: center;
+      }
+
+      .end {
+        justify-content: end;
+      }
 
       ul {
         padding-right: 3rem;
@@ -126,14 +152,14 @@ main {
         list-style: none;
 
         li {
-          a {
+          span {
             font-size: 1.1rem;
             letter-spacing: 0.02rem;
             color: $Grayish-Blue;
-            text-decoration: none;
           }
 
-          a:hover {
+          span:hover {
+            cursor: pointer;
             color: $Soft-Red;
           }
         }
@@ -144,9 +170,10 @@ main {
   .feature-main {
     display: flex;
     align-items: center;
-    gap: 5rem;
+    gap: 8rem;
 
     .img-container {
+      margin-left: 2rem;
       position: relative;
 
       .hero-img {
@@ -166,29 +193,31 @@ main {
       }
     }
 
-    h2 {
-      font-size: 2rem;
-      font-weight: 500;
-      color: $Very-Dark-Blue;
-    }
+    .text-container {
+      h2 {
+        font-size: 2rem;
+        font-weight: 500;
+        color: $Very-Dark-Blue;
+      }
 
-    p {
-      font-size: 1.15rem;
-      line-height: 1.8rem;
-      color: $Grayish-Blue;
-      max-width: 95%;
-    }
+      p {
+        font-size: 1.15rem;
+        line-height: 1.8rem;
+        color: $Grayish-Blue;
+        max-width: 95%;
+      }
 
-    .info-btn {
-      @include btn-default($Soft-Blue);
-      margin-top: 1rem;
-      padding: 0.8rem 1.4rem;
-      letter-spacing: 0.02rem;
-    }
+      .info-btn {
+        @include btn-default($Soft-Blue);
+        margin-top: 1rem;
+        padding: 0.8rem 1.4rem;
+        letter-spacing: 0.02rem;
+      }
 
-    .info-btn:hover {
-      background-color: transparent;
-      color: $Soft-Blue;
+      .info-btn:hover {
+        background-color: transparent;
+        color: $Soft-Blue;
+      }
     }
   }
 }
@@ -317,6 +346,7 @@ main {
     margin-top: 3.6rem;
 
     hr {
+      margin: 0;
       border: none;
       border-bottom: 1px solid rgba(187, 187, 187, 0.788);
     }
