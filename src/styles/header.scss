@@ -48,4 +48,35 @@ header {
       color: $Soft-Red;
     }
   }
+
+  .mobile-menu-btn {
+    display: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    img {
+      width: 30px;
+      height: 22px;
+    }
+
+    .close-img {
+      display: none;
+      height: 24px;
+    }
+
+    .show {
+      display: block;
+    }
+  }
 }
+
+.show {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+@import "media-queries.scss";

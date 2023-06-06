@@ -12,12 +12,15 @@ import Button, { reloadPage, validateEmail } from "./components/Button";
 import Features from "./components/Features";
 import Card from "./components/Card";
 import Faqs from "./components/Faqs";
+import HamburgerMenu from "./components/HamburgerMenu";
 
 function App() {
   return (
     <>
+      <div className="overlay hidden"></div>
       <header>
         <BookmarkLogo color="#242A45" />
+
         <div className="nav-container">
           <NavBar
             linkText1="features"
@@ -26,6 +29,8 @@ function App() {
           />
           <Button className="login-btn" btnText="login" />
         </div>
+
+        <HamburgerMenu />
       </header>
 
       <main>
