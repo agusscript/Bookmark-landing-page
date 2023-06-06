@@ -94,6 +94,16 @@ main {
       z-index: -1;
       top: 30%;
       left: 34%;
+
+      @media (max-width: 870px) {
+        width: 700px;
+        height: 300px;
+      }
+
+      @media (max-width: 600px) {
+        width: 600px;
+        height: 220px;
+      }
     }
   }
 }

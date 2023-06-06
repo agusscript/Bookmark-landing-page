@@ -4,11 +4,11 @@ import "../styles/header.scss";
 
 function NavBar({ linkText1, linkText2, linkText3 }) {
   const handleClick = () => {
-    document.querySelector(".bookmark-logo").classList.toggle("bookmark-white");
-    document.querySelector(".overlay").classList.toggle("hidden");
-    document.querySelector(".nav-container").classList.toggle("center");
-    document.querySelector(".hamburger-img").classList.toggle("hidden");
-    document.querySelector(".close-img").classList.toggle("show");
+    document.querySelector(".bookmark-logo").classList.remove("bookmark-white");
+    document.querySelector(".overlay").classList.add("hidden");
+    document.querySelector(".nav-container").classList.remove("center");
+    document.querySelector(".hamburger-img").classList.remove("hidden");
+    document.querySelector(".close-img").classList.remove("show");
   };
 
   return (
