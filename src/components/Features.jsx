@@ -96,6 +96,7 @@ function Features() {
         </p>
         <nav>
           <ul>
+            <div className="feature-bottom-line-item"></div>
             <li>
               <span className="feature-1" onClick={handleFeature}>
                 Simple Bookmarking
