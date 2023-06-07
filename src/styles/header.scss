@@ -47,6 +47,23 @@ header {
       background-color: transparent;
       color: $Soft-Red;
     }
+
+    .icon-container-header {
+      display: flex;
+      margin-top: 4rem;
+      gap: 2rem;
+
+      svg:hover {
+        cursor: pointer;
+        path {
+          fill: $Soft-Red;
+        }
+      }
+    }
+
+    .hidden {
+      display: none;
+    }
   }
 
   .mobile-menu-btn {

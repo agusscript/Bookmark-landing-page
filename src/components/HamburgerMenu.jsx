@@ -10,6 +10,7 @@ function HamburgerMenu() {
     document.querySelector(".nav-container").classList.toggle("center");
     document.querySelector(".hamburger-img").classList.toggle("hidden");
     document.querySelector(".close-img").classList.toggle("show");
+    document.querySelector(".icon-container-header").classList.toggle("hidden");
   };
 
   return (
