@@ -643,7 +643,7 @@ main {
     left: 50%;
     max-width: 520px;
     min-height: 300px;
-    padding: 0 4rem;
+    padding: 1rem 4rem;
     line-height: 1.7rem;
     -ms-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
@@ -652,15 +652,29 @@ main {
     background-color: $Very-Dark-Blue;
     border-radius: 0.4rem;
 
+    @media (max-width: 810px) {
+      padding: 1rem 2rem;
+      width: 70vw;
+    }
+
     h2 {
       margin: 0.5rem;
       font-size: 2.2rem;
       font-weight: 500;
+      line-height: 2.2rem;
+
+      @media (max-width: 810px) {
+        font-size: 1.8rem;
+      }
     }
 
     p {
       font-size: 1.1rem;
       letter-spacing: 0.2rem;
+
+      @media (max-width: 810px) {
+        font-size: 1rem;
+      }
     }
 
     button {
