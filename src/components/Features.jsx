@@ -53,6 +53,9 @@ function handleFeature(e) {
     setTimeout(() => {
       $featureMain.classList.add("animation-fade");
     }, 0.5);
+    document.querySelector(".item-1").classList.remove("hidden");
+    document.querySelector(".item-2").classList.add("hidden");
+    document.querySelector(".item-3").classList.add("hidden");
   } else if (featureOption.className === "feature-2") {
     changeFeatureElement(1);
     $bottomLine.classList.remove("start");
@@ -63,6 +66,9 @@ function handleFeature(e) {
     setTimeout(() => {
       $featureMain.classList.add("animation-fade");
     }, 0.5);
+    document.querySelector(".item-1").classList.add("hidden");
+    document.querySelector(".item-2").classList.remove("hidden");
+    document.querySelector(".item-3").classList.add("hidden");
   } else if (featureOption.className === "feature-3") {
     changeFeatureElement(2);
     $bottomLine.classList.remove("start");
@@ -72,6 +78,9 @@ function handleFeature(e) {
     setTimeout(() => {
       $featureMain.classList.add("animation-fade");
     }, 0.5);
+    document.querySelector(".item-1").classList.add("hidden");
+    document.querySelector(".item-2").classList.add("hidden");
+    document.querySelector(".item-3").classList.remove("hidden");
   }
 }
 
@@ -92,16 +101,25 @@ function Features() {
                 Simple Bookmarking
               </span>
             </li>
+            <div className="feature-bottom-line-item">
+              <div className="inner-border-item item-1"></div>
+            </div>
             <li>
               <span className="feature-2" onClick={handleFeature}>
                 Speedy Searching
               </span>
             </li>
+            <div className="feature-bottom-line-item">
+              <div className="inner-border-item item-2 hidden"></div>
+            </div>
             <li>
               <span className="feature-3" onClick={handleFeature}>
                 Easy Sharing
               </span>
             </li>
+            <div className="feature-bottom-line-item">
+              <div className="inner-border-item item-3 hidden"></div>
+            </div>
           </ul>
           <div className="feature-bottom-line">
             <div className="inner-border"></div>
