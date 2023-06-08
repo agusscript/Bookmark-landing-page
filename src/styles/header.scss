@@ -25,6 +25,12 @@ header {
         gap: 3rem;
         list-style: none;
 
+        .bottom-line-li {
+          width: 100%;
+          border-bottom: 1px solid rgba(189, 189, 189, 0.308);
+          margin: 0;
+        }
+
         li {
           a {
             color: $Very-Dark-Blue;
@@ -51,7 +57,7 @@ header {
 
     .icon-container-header {
       display: flex;
-      margin-top: 4rem;
+      margin-top: 3rem;
       gap: 2rem;
 
       svg:hover {
