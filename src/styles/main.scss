@@ -1,6 +1,8 @@
 @import "variables.scss";
 
-html {
+html,
+body,
+#root {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }
