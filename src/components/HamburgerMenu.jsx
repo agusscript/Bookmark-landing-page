@@ -6,8 +6,8 @@ import iconClose from "../assets/images/icon-close.svg";
 function HamburgerMenu() {
   const handleClick = () => {
     document.querySelector(".bookmark-logo").classList.toggle("bookmark-white");
+    document.querySelector(".nav-container").classList.toggle("hidden");
     document.querySelector(".overlay").classList.toggle("hidden");
-    document.querySelector(".nav-container").classList.toggle("center");
     document.querySelector(".hamburger-img").classList.toggle("hidden");
     document.querySelector(".close-img").classList.toggle("show");
     document.querySelector(".icon-container-header").classList.toggle("hidden");

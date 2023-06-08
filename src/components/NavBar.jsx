@@ -6,7 +6,7 @@ function NavBar({ linkText1, linkText2, linkText3 }) {
   const handleClick = () => {
     document.querySelector(".bookmark-logo").classList.remove("bookmark-white");
     document.querySelector(".overlay").classList.add("hidden");
-    document.querySelector(".nav-container").classList.remove("center");
+    document.querySelector(".nav-container").classList.add("hidden");
     document.querySelector(".hamburger-img").classList.remove("hidden");
     document.querySelector(".close-img").classList.remove("show");
   };

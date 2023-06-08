@@ -22,7 +22,7 @@ function App() {
       <header>
         <BookmarkLogo color="#242A45" />
 
-        <div className="nav-container">
+        <div className="nav-container hidden">
           <NavBar
             linkText1="features"
             linkText2="pricing"
