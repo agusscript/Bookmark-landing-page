@@ -27,19 +27,19 @@ Users should be able to:
 
 - Desktop view
 
-![](images/screenshots/desktop-active-states.jpg)
+![](src/assets/screenshots/desktop-active-states.jpg)
 
-![](images/screenshots/tab-2-design.jpg)
+![](src/assets/screenshots/tab-2-design.jpg)
 
-![](images/screenshots/tab-3-design.jpg)
+![](src/assets/screenshots/tab-3-design.jpg)
 
-![](images/screenshots/modal-message.png)
+![](src/assets/screenshots/modal-message.png)
 
 - Mobile view
 
-![](images/screenshots/mobile-design.jpg)
+![](src/assets/screenshots/mobile-design.jpg)
 
-![](images/screenshots/mobile-active-nav.jpg)
+![](src/assets/screenshots/mobile-active-nav.jpg)
 
 ### Links
 
