@@ -1,10 +1,8 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import "../styles/main.scss";
-import Button from "./Button";
-import imgTab1 from "../assets/images/illustration-features-tab-1.svg";
-import imgTab2 from "../assets/images/illustration-features-tab-2.svg";
-import imgTab3 from "../assets/images/illustration-features-tab-3.svg";
+import imgTab1 from "../../assets/images/illustration-features-tab-1.svg";
+import imgTab2 from "../../assets/images/illustration-features-tab-2.svg";
+import imgTab3 from "../../assets/images/illustration-features-tab-3.svg";
 
 const features = [
   {
@@ -87,7 +85,7 @@ function handleFeature(e) {
   }
 }
 
-function Features() {
+function FeatureSection() {
   return (
     <section id="features" className="features-section">
       <div className="feature-header">
@@ -143,11 +141,11 @@ function Features() {
         <div className="text-container">
           <h2 className="feature-title">{features[0].title}</h2>
           <p className="feature-text">{features[0].text}</p>
-          <Button className="info-btn" btnText="More Info" />
+          <button className="info-btn">More Info</button>
         </div>
       </div>
     </section>
   );
 }
 
-export default Features;
+export default FeatureSection;

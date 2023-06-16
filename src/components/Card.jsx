@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import React from "react";
-import Button from "./Button";
 
 function Card({ image, browser, version }) {
   return (
@@ -9,7 +8,7 @@ function Card({ image, browser, version }) {
       <h3>Add to {browser}</h3>
       <p>Minimum version {version}</p>
       <hr />
-      <Button className="extension-btn" btnText="Add & Install Extension" />
+      <button className="extension-btn">Add & Install Extension</button>
     </div>
   );
 }
