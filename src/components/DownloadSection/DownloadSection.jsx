@@ -1,10 +1,22 @@
 import React from "react";
-import Card from "../Card";
+import "./DownloadSection.scss";
 import ChromeImg from "../../assets/images/logo-chrome.svg";
 import FirefoxImg from "../../assets/images/logo-firefox.svg";
 import OperaImg from "../../assets/images/logo-opera.svg";
 
-function DownloadSection() {
+const Card = ({ image, browser, version }) => {
+  return (
+    <div className="card-extension">
+      <img src={image} alt={`${browser} icon`} />
+      <h3>Add to {browser}</h3>
+      <p>Minimum version {version}</p>
+      <hr />
+      <button className="extension-btn">Add & Install Extension</button>
+    </div>
+  );
+};
+
+const DownloadSection = () => {
   return (
     <section id="download" className="download-section">
       <h2>Download the extension</h2>
@@ -19,6 +31,6 @@ function DownloadSection() {
       </div>
     </section>
   );
-}
+};
 
 export default DownloadSection;

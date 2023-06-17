@@ -4,7 +4,7 @@ import BookmarkLogo from "../BookmarkLogo";
 import NavBar from "../NavBar";
 import SocialIcons from "../SocialIcons";
 
-function Footer() {
+const Footer = () => {
   return (
     <footer>
       <div className="nav-container">
@@ -14,6 +14,6 @@ function Footer() {
       <SocialIcons className={"icon-container-footer"} />
     </footer>
   );
-}
+};
 
 export default Footer;

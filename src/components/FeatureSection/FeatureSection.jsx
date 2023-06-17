@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from "react";
+import "./FeatureSection.scss";
 import imgTab1 from "../../assets/images/illustration-features-tab-1.svg";
 import imgTab2 from "../../assets/images/illustration-features-tab-2.svg";
 import imgTab3 from "../../assets/images/illustration-features-tab-3.svg";
@@ -28,7 +29,7 @@ const features = [
   },
 ];
 
-function changeFeatureElement(number) {
+const changeFeatureElement = (number) => {
   const $featureImage = document.querySelector(".feature-img");
   const $featureTitle = document.querySelector(".feature-title");
   const $featureText = document.querySelector(".feature-text");
@@ -36,9 +37,9 @@ function changeFeatureElement(number) {
   $featureImage.src = features[number].image;
   $featureTitle.textContent = features[number].title;
   $featureText.textContent = features[number].text;
-}
+};
 
-function handleFeature(e) {
+const handleFeature = (e) => {
   const featureOption = e.target;
   const $bottomLine = document.querySelector(".feature-bottom-line");
   const $innerLine = document.querySelector(".inner-border");
@@ -83,9 +84,9 @@ function handleFeature(e) {
     document.querySelector(".item-2").classList.add("hidden");
     document.querySelector(".item-3").classList.remove("hidden");
   }
-}
+};
 
-function FeatureSection() {
+const FeatureSection = () => {
   return (
     <section id="features" className="features-section">
       <div className="feature-header">
@@ -146,6 +147,6 @@ function FeatureSection() {
       </div>
     </section>
   );
-}
+};
 
 export default FeatureSection;

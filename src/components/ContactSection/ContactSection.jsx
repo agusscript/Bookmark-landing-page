@@ -1,4 +1,5 @@
 import React from "react";
+import "./ContactSection.scss";
 
 const validateEmail = () => {
   const $contactInput = document.querySelector(".contact-input");
@@ -21,7 +22,7 @@ const reloadPage = () => {
   location.reload();
 };
 
-function ContactSection() {
+const ContactSection = () => {
   return (
     <section id="contact" className="contact-section">
       <p className="contact-subtitle">35,000+ ALREADY JOINED</p>
@@ -50,6 +51,6 @@ function ContactSection() {
       </div>
     </section>
   );
-}
+};
 
 export default ContactSection;

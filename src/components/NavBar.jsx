@@ -1,19 +1,19 @@
 /* eslint-disable react/prop-types */
 import React from "react";
 
-const handleClick = () => {
-  document.querySelector(".bookmark-logo").classList.remove("bookmark-white");
-  document.querySelector(".overlay").classList.add("hidden");
-  document.querySelector(".nav-container").classList.add("hidden");
-  document.querySelector(".hamburger-img").classList.remove("hidden");
-  document.querySelector(".close-img").classList.remove("show");
-  document.querySelector(".icon-container-header").classList.add("hidden");
-  document.querySelectorAll(".bottom-line-li").forEach((line) => {
-    line.classList.add("hidden");
-  });
-};
+const NavBar = ({ linkText1, linkText2, linkText3 }) => {
+  const handleClick = () => {
+    document.querySelector(".bookmark-logo").classList.remove("bookmark-white");
+    document.querySelector(".overlay").classList.add("hidden");
+    document.querySelector(".nav-container").classList.add("hidden");
+    document.querySelector(".hamburger-img").classList.remove("hidden");
+    document.querySelector(".close-img").classList.remove("show");
+    document.querySelector(".icon-container-header").classList.add("hidden");
+    document.querySelectorAll(".bottom-line-li").forEach((line) => {
+      line.classList.add("hidden");
+    });
+  };
 
-function NavBar({ linkText1, linkText2, linkText3 }) {
   return (
     <nav className="nav">
       <ul>
@@ -42,6 +42,6 @@ function NavBar({ linkText1, linkText2, linkText3 }) {
       </ul>
     </nav>
   );
-}
+};
 
 export default NavBar;

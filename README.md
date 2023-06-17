@@ -64,7 +64,10 @@ Users should be able to:
   <img src="https://img.shields.io/badge/-JavaScript-yellow?style=flat-square&logo=Javascript&logoColor=white" height="30" alt="JavaScript"/>
  </a>
   <a href="https://react.dev/blog/2023/03/16/introducing-react-dev">
-  <img src="https://img.shields.io/badge/-React-cyan?style=flat-square&logo=react&logoColor=black" height="30" alt="React"/>
+  <img src="https://img.shields.io/badge/-React-17A1E6?style=flat-square&logo=react&logoColor=white" height="30" alt="React"/>
+ </a>
+  <a href="https://vitejs.dev/">
+  <img src="https://img.shields.io/badge/-ViteJS-purple?style=flat-square&logo=Vite&logoColor=white" height="30" alt="ViteJs"/>
  </a>
 </p>
 

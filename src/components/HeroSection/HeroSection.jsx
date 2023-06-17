@@ -1,7 +1,8 @@
 import React from "react";
+import "./HeroSection.scss";
 import heroImage from "../../assets/images/illustration-hero.svg";
 
-function HeroSection() {
+const HeroSection = () => {
   return (
     <section className="hero-section">
       <div className="hero-text-container">
@@ -21,6 +22,6 @@ function HeroSection() {
       </div>
     </section>
   );
-}
+};
 
 export default HeroSection;
