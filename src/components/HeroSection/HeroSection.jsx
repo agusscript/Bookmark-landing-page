@@ -1,4 +1,3 @@
-import React from "react";
 import "./HeroSection.scss";
 import heroImage from "../../assets/images/illustration-hero.svg";
 
@@ -8,8 +7,8 @@ const HeroSection = () => {
       <div className="hero-text-container">
         <h1>A Simple Bookmark Manager</h1>
         <p>
-          A clean and simple interface to organize your favourite websites. Open
-          a new browser tab and see your sites load instantly. Try it for free.
+          A clean and simple interface to organize your favourite websites. Open a new
+          browser tab and see your sites load instantly. Try it for free.
         </p>
         <div className="btn-container">
           <button className="chrome-btn">Get it on Chrome</button>
