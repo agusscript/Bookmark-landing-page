@@ -1,27 +1,28 @@
 import "./ContactSection.scss";
-
-const validateEmail = () => {
-  const $contactInput = document.querySelector(".contact-input");
-  const $errorText = document.querySelector(".error-text");
-  const $contactModal = document.querySelector(".contact-modal");
-
-  if (/^[^@]+@[^@]+\.[a-zA-Z]{2,}$/.test($contactInput.value)) {
-    $contactInput.classList.remove("error");
-    $errorText.classList.add("hidden");
-    $contactModal.classList.remove("hidden");
-  } else {
-    $contactInput.classList.add("error");
-    $errorText.classList.remove("hidden");
-  }
-
-  event.preventDefault();
-};
-
-const reloadPage = () => {
-  location.reload();
-};
+import { useState } from "react";
 
 const ContactSection = () => {
+  const [validEmail, setValidEmail] = useState(0);
+  const [inputValue, setinputValue] = useState("");
+
+  const validateEmail = (event) => {
+    const regexEmail = /^[^@]+@[^@]+\.[a-zA-Z]{2,}$/;
+
+    if (regexEmail.test(inputValue)) {
+      setValidEmail(1);
+      console.log(inputValue);
+    } else {
+      setValidEmail(2);
+      console.log(inputValue);
+    }
+
+    event.preventDefault();
+  };
+
+  const reloadPage = () => {
+    location.reload();
+  };
+
   return (
     <section id="contact" className="contact-section">
       <p className="contact-subtitle">35,000+ ALREADY JOINED</p>
@@ -29,11 +30,12 @@ const ContactSection = () => {
       <form className="contact-form">
         <div className="input-wrapper">
           <input
-            className="contact-input"
+            className={`contact-input ${validEmail == 2 ? "error" : ""}`}
             type="text"
             placeholder="Enter your email address"
+            onChange={(e) => setinputValue(e.target.value)}
           />
-          <span className="error-text hidden">
+          <span className={`error-text ${validEmail == 2 ? "" : "hidden"}`}>
             Whoops, make sure it’s an email
           </span>
         </div>
@@ -41,11 +43,9 @@ const ContactSection = () => {
           Contact Us
         </button>
       </form>
-      <div className="contact-modal hidden">
+      <div className={`contact-modal ${validEmail == 1 ? "" : "hidden"}`}>
         <h2>Thanks for your support!</h2>
-        <p>
-          We will send you by e-mail all the information about our latest news.
-        </p>
+        <p>We will send you by e-mail all the information about our latest news.</p>
         <button onClick={reloadPage}>Got it!</button>
       </div>
     </section>
