@@ -1,4 +1,3 @@
-import React from "react";
 import Faq from "react-faq-component";
 import "./FaqSection.scss";
 
@@ -41,8 +40,8 @@ const FaqSection = () => {
     <section className="faq-section">
       <h2>Frequently Asked Questions</h2>
       <p>
-        Here are some of our FAQs. If you have any other questions you’d like
-        answered please feel free to email us.
+        Here are some of our FAQs. If you have any other questions you’d like answered
+        please feel free to email us.
       </p>
       <Faqs />
       <button className="faq-btn">More Info</button>

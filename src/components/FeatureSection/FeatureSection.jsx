@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-import React from "react";
 import "./FeatureSection.scss";
 import imgTab1 from "../../assets/images/illustration-features-tab-1.svg";
 import imgTab2 from "../../assets/images/illustration-features-tab-2.svg";

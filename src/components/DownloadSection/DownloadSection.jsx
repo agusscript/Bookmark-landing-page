@@ -1,4 +1,3 @@
-import React from "react";
 import "./DownloadSection.scss";
 import ChromeImg from "../../assets/images/logo-chrome.svg";
 import FirefoxImg from "../../assets/images/logo-firefox.svg";

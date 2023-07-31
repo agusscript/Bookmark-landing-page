@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import React from "react";
 
 const NavBar = ({ linkText1, linkText2, linkText3 }) => {

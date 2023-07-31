@@ -1,4 +1,3 @@
-import React from "react";
 import "./footer.scss";
 import BookmarkLogo from "../BookmarkLogo";
 import NavBar from "../NavBar";

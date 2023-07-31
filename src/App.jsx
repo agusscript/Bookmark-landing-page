@@ -11,8 +11,6 @@ import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <>
-      <div className="overlay hidden"></div>
-
       <Header />
 
       <main>
