@@ -10,10 +10,8 @@ const ContactSection = () => {
 
     if (regexEmail.test(inputValue)) {
       setValidEmail(1);
-      console.log(inputValue);
     } else {
       setValidEmail(2);
-      console.log(inputValue);
     }
 
     event.preventDefault();
